@@ -1,0 +1,220 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7206,        212]
+NotebookOptionsPosition[      6508,        191]
+NotebookOutlinePosition[      6906,        207]
+CellTagsIndexPosition[      6863,        204]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"frakh1", "[", "n_", "]"}], "=", 
+   RowBox[{
+    RowBox[{"Abs", "[", 
+     RowBox[{
+      RowBox[{"144", "*", "n"}], "+", "48"}], "]"}], "^", "3"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"frakf1", "[", "n_", "]"}], "=", 
+  RowBox[{"Abs", "[", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"144", "*", 
+       RowBox[{"n", "^", "2"}]}], "+", 
+      RowBox[{"60", "*", "n"}], "+", "13"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"12", "*", "n"}], "+", "7"}], ")"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{
+  3.8785867090805693`*^9, {3.878586747723866*^9, 3.8785868146421537`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"478866f6-a644-43f0-b104-12d7cdd9bbb1"],
+
+Cell[BoxData[
+ RowBox[{"Abs", "[", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"7", "+", 
+     RowBox[{"12", " ", "n"}]}], ")"}], " ", 
+   RowBox[{"(", 
+    RowBox[{"13", "+", 
+     RowBox[{"60", " ", "n"}], "+", 
+     RowBox[{"144", " ", 
+      SuperscriptBox["n", "2"]}]}], ")"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.878586901999173*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"65bcdcf1-6745-41cb-9e4e-1e27a3f484a7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Reduce", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"frakf1", "[", "x", "]"}], "^", "3"}], "-", 
+     RowBox[{
+      RowBox[{"frakh1", "[", "x", "]"}], "^", "2"}]}], ">=", "0"}], ",", "x", 
+   ",", "Reals"}], "]"}]], "Input",
+ CellChangeTimes->{{3.878586819631312*^9, 3.878586885026747*^9}, 
+   3.878592115332922*^9},
+ CellLabel->"In[4]:=",ExpressionUUID->"58a1bfc6-dce2-4bb2-bdf9-ebb60ab476cc"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"x", "\[LessEqual]", 
+   InterpretationBox[
+    TemplateBox[{"Root", 
+      InterpretationBox[
+       StyleBox[
+        TemplateBox[{"\"-12.3\"", 
+          DynamicBox[
+           FEPrivate`FrontEndResource[
+           "FEExpressions", "NumericalApproximationElider"], 
+           ImageSizeCache -> {12., {1., 2.}}]}, "RowDefault"], 
+        ShowStringCharacters -> 
+        False], -12.33344183831554730090829252731055021286`15.954589770191003,
+        Editable -> False], 
+      TagBox[
+       RowBox[{"Root", "[", 
+         RowBox[{
+           RowBox[{
+             RowBox[{"2395", "+", 
+               RowBox[{"14400", " ", "#1"}], "+", 
+               RowBox[{"22464", " ", 
+                 SuperscriptBox["#1", "2"]}], "+", 
+               RowBox[{"1728", " ", 
+                 SuperscriptBox["#1", "3"]}]}], "&"}], ",", "1"}], "]"}], 
+       Short[#, 7]& ], -12.333441838315547`},
+     "NumericalApproximation"],
+    Root[2395 + 14400 # + 22464 #^2 + 1728 #^3& , 1, 0]]}], "||", 
+  RowBox[{
+   InterpretationBox[
+    TemplateBox[{"Root", 
+      InterpretationBox[
+       StyleBox[
+        TemplateBox[{"\"-0.369\"", 
+          DynamicBox[
+           FEPrivate`FrontEndResource[
+           "FEExpressions", "NumericalApproximationElider"], 
+           ImageSizeCache -> {12., {1., 2.}}]}, "RowDefault"], 
+        ShowStringCharacters -> 
+        False], -0.36936367463706293312597495059890206903`15.954589770191003, 
+       Editable -> False], 
+      TagBox[
+       RowBox[{"Root", "[", 
+         RowBox[{
+           RowBox[{
+             RowBox[{
+               RowBox[{"-", "2213"}], "-", 
+               RowBox[{"13248", " ", "#1"}], "-", 
+               RowBox[{"19008", " ", 
+                 SuperscriptBox["#1", "2"]}], "+", 
+               RowBox[{"1728", " ", 
+                 SuperscriptBox["#1", "3"]}]}], "&"}], ",", "1"}], "]"}], 
+       Short[#, 7]& ], -0.36936367463706293`},
+     "NumericalApproximation"],
+    Root[-2213 - 13248 # - 19008 #^2 + 1728 #^3& , 1, 0]], "\[LessEqual]", 
+   "x", "\[LessEqual]", 
+   InterpretationBox[
+    TemplateBox[{"Root", 
+      InterpretationBox[
+       StyleBox[
+        TemplateBox[{"\"-0.297\"", 
+          DynamicBox[
+           FEPrivate`FrontEndResource[
+           "FEExpressions", "NumericalApproximationElider"], 
+           ImageSizeCache -> {12., {1., 2.}}]}, "RowDefault"], 
+        ShowStringCharacters -> 
+        False], -0.29719448312280433155407877165998797864`15.954589770191003, 
+       Editable -> False], 
+      TagBox[
+       RowBox[{"Root", "[", 
+         RowBox[{
+           RowBox[{
+             RowBox[{
+               RowBox[{"-", "2213"}], "-", 
+               RowBox[{"13248", " ", "#1"}], "-", 
+               RowBox[{"19008", " ", 
+                 SuperscriptBox["#1", "2"]}], "+", 
+               RowBox[{"1728", " ", 
+                 SuperscriptBox["#1", "3"]}]}], "&"}], ",", "2"}], "]"}], 
+       Short[#, 7]& ], -0.29719448312280433`},
+     "NumericalApproximation"],
+    Root[-2213 - 13248 # - 19008 #^2 + 1728 #^3& , 2, 0]]}], "||", 
+  RowBox[{"x", "\[GreaterEqual]", 
+   InterpretationBox[
+    TemplateBox[{"Root", 
+      InterpretationBox[
+       StyleBox[
+        TemplateBox[{"\"11.7\"", 
+          DynamicBox[
+           FEPrivate`FrontEndResource[
+           "FEExpressions", "NumericalApproximationElider"], 
+           ImageSizeCache -> {12., {1., 2.}}]}, "RowDefault"], 
+        ShowStringCharacters -> False], 
+       11.66655815775986759774696110980585217476`15.954589770191003, Editable -> 
+       False], 
+      TagBox[
+       RowBox[{"Root", "[", 
+         RowBox[{
+           RowBox[{
+             RowBox[{
+               RowBox[{"-", "2213"}], "-", 
+               RowBox[{"13248", " ", "#1"}], "-", 
+               RowBox[{"19008", " ", 
+                 SuperscriptBox["#1", "2"]}], "+", 
+               RowBox[{"1728", " ", 
+                 SuperscriptBox["#1", "3"]}]}], "&"}], ",", "3"}], "]"}], 
+       Short[#, 7]& ], 11.666558157759868`},
+     "NumericalApproximation"],
+    Root[-2213 - 13248 # - 19008 #^2 + 1728 #^3& , 3, 0]]}]}]], "Output",
+ CellChangeTimes->{{3.8785868875262737`*^9, 3.878586916604869*^9}},
+ CellLabel->"Out[4]=",ExpressionUUID->"cadaaeb6-3341-4c43-93e9-5bb6a57f28a2"]
+}, Open  ]]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (July 9, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3efcf517-45ae-41ba-bf4e-3335073a6505"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 756, 23, 50, "Input",ExpressionUUID->"478866f6-a644-43f0-b104-12d7cdd9bbb1"],
+Cell[1339, 47, 419, 12, 37, "Output",ExpressionUUID->"65bcdcf1-6745-41cb-9e4e-1e27a3f484a7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1795, 64, 446, 12, 29, "Input",ExpressionUUID->"58a1bfc6-dce2-4bb2-bdf9-ebb60ab476cc"],
+Cell[2244, 78, 4248, 110, 42, "Output",ExpressionUUID->"cadaaeb6-3341-4c43-93e9-5bb6a57f28a2"]
+}, Open  ]]
+}
+]
+*)
+
